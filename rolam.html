@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rólam - Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components.css">
 </head>
+
 <body>
 
     <header>
+        <h1>Rólam</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -19,21 +24,39 @@
     </header>
 
     <main>
-        <p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+        <!-- Jól látható visszalépő gomb -->
+        <div style="margin: 20px 0;">
+            <a href="index.html" style="display: inline-block; background-color: #2563eb; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+                &larr; Vissza a főoldalra
+            </a>
+        </div>
 
-        <h1>Rólam</h1>
-        <img src="https://picsum.photos/200/200" alt="Profilkép" width="200" height="200">
+        <section>
+            <img src="IMG-20260918_100454.jpg" alt="Profilképem" class="avatar">
 
-        <h2>Bemutatkozás</h2>
-        <p>Informatikus hallgató és fejlesztő vagyok, folyamatosan bővítem a szakmai tudásomat.</p>
+            <h2>Bemutatkozás</h2>
+            <p>Informatikus hallgató vagyok, jelenleg az egyetemen tanulok. Célom a programozási alapok elmélyítése, valamint hatékony és jól strukturált szoftverek készítése a gyakorlatban.</p>
 
-        <h2>Érdeklődési körök</h2>
-        <p>Webfejlesztés, modern technológiák és hatékony szoftvermegoldások készítése.</p>
+            <h2>Érdeklődési körök</h2>
+            <p>A technológia és kódolás mellett a szabadidőmet leginkább a <strong>gaming</strong> és a <strong>zenélés</strong> köti le.</p>
+
+            <h2>Képességek</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Flutter</li>
+                <li>C#</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Portfólió</p>
+        <hr>
+        <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
+        <p>&copy; 2026 Minden jog fenntartva.</p>
     </footer>
 
 </body>
+
 </html>

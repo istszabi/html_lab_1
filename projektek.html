@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projektek - Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components.css">
 </head>
+
 <body>
 
     <header>
+        <h1>Projektek</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -19,36 +24,51 @@
     </header>
 
     <main>
-        <p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+        <!-- Jól látható visszalépő gomb -->
+        <div style="margin: 20px 0;">
+            <a href="index.html"
+                style="display: inline-block; background-color: #2563eb; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+                &larr; Vissza a főoldalra
+            </a>
+        </div>
 
-        <h1>Projektek</h1>
-
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Projekt neve</th>
-                    <th>Leírás</th>
-                    <th>Használt technológiák</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Online Portfólió</td>
-                    <td>Személyes bemutató oldal.</td>
-                    <td>HTML5, CSS3</td>
-                </tr>
-                <tr>
-                    <td>Mobilalkalmazás</td>
-                    <td>Katalógus és média app.</td>
-                    <td>Flutter, REST API</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h2>Eddigi munkák és projektek</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Projekt neve</th>
+                        <th>Leírás</th>
+                        <th>Használt technológiák</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mobil Zene és Albumkereső</td>
+                        <td>Kereshető média- és katalógusalkalmazás API-integrációval.</td>
+                        <td>Flutter, Dart</td>
+                    </tr>
+                    <tr>
+                        <td>Random Playlist Generator Szoftver</td>
+                        <td>Grafikus felülettel ellátott adatbázis- és objektumkezelő rendszer.</td>
+                        <td>Java, Swing / JavaFX</td>
+                    </tr>
+                    <tr>
+                        <td>Algoritmus és Rendszerprogramozás</td>
+                        <td>Gráfkezelő és memóriahatékony konzolos eszközök.</td>
+                        <td>C, C++</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Portfólió</p>
+        <hr>
+        <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
+        <p>&copy; 2026 Minden jog fenntartva.</p>
     </footer>
 
 </body>
+
 </html>

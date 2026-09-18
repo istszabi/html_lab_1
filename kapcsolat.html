@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat - Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components.css">
 </head>
+
 <body>
 
     <header>
+        <h1>Kapcsolat</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -19,33 +24,44 @@
     </header>
 
     <main>
-        <p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+        <!-- Jól látható visszalépő gomb -->
+        <div style="margin: 20px 0;">
+            <a href="index.html"
+                style="display: inline-block; background-color: #2563eb; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+                &larr; Vissza a főoldalra
+            </a>
+        </div>
 
-        <h1>Kapcsolatfelvétel</h1>
-
-        <form action="#" method="post">
-            <div>
-                <label for="nev">Név:</label><br>
-                <input type="text" id="nev" name="nev" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">E-mail cím:</label><br>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <br>
-            <div>
-                <label for="uzenet">Üzenet:</label><br>
-                <textarea id="uzenet" name="uzenet" rows="5" cols="35" required></textarea>
-            </div>
-            <br>
-            <button type="submit">Küldés</button>
-        </form>
+        <section>
+            <h2>Írj üzenetet</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nev">Név:</label><br>
+                    <input type="text" id="nev" name="nev" placeholder="Add meg a neved" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail cím:</label><br>
+                    <input type="email" id="email" name="email" placeholder="pelda@email.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="uzenet">Üzenet:</label><br>
+                    <textarea id="uzenet" name="uzenet" rows="5" cols="35" placeholder="Írd ide az üzenetet..."
+                        required></textarea>
+                </div>
+                <br>
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Portfólió</p>
+        <hr>
+        <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
+        <p>&copy; 2026 Minden jog fenntartva.</p>
     </footer>
 
 </body>
+
 </html>

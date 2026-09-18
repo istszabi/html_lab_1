@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólió - Főoldal</title>
+    <title>Portfólió</title>
 
+    <!-- 1. Feladat szerinti style.css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- 13. Feladat szerinti base.css és components.css -->
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="components.css">
 
+    <!-- CSS 13. Feladat: 2 példa belső (internal) CSS-re -->
     <style>
         .info-kiemeles {
             background-color: #e8f0fe;
@@ -18,10 +23,10 @@
             border-radius: 4px;
         }
 
-        .tech-badge {
+        .badge {
             background-color: #e2e8f0;
             color: #1a202c;
-            padding: 3px 8px;
+            padding: 2px 8px;
             border-radius: 4px;
             font-size: 0.85rem;
             font-weight: bold;
@@ -31,54 +36,70 @@
 
 <body>
 
+    <!-- HTML 2. Feladat: Fejléc, belső hivatkozások és aloldalak linkjei -->
     <header id="fooldal">
         <h1>Üdvözöllek a portfóliómban!</h1>
         <nav>
             <ul>
                 <li><a href="#fooldal">Főoldal</a></li>
-                <li><a href="#rolam">Rólam</a></li>
+                <li><a href="rolam.html">Rólam (aloldal)</a></li>
+                <li><a href="projektek.html">Projektek (aloldal)</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat (aloldal)</a></li>
                 <li><a href="#kepessegek">Képességek</a></li>
-                <li><a href="#projektek">Projektek</a></li>
                 <li><a href="#galeria">Galéria</a></li>
-                <li><a href="#kapcsolat">Kapcsolat</a></li>
+                <li><a href="#js-gyakorlatok">JS Tesztek</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- HTML 7. Feladat: Oldalsáv (aside) -->
         <aside>
-            <h3>Gyorslinkek a projektekhez</h3>
+            <h3>Gyors navigáció a projektekhez</h3>
             <ul>
                 <li><a href="#flutter-app">Mobilalkalmazás (Flutter)</a></li>
                 <li><a href="#java-app">Asztali Rendszer (Java)</a></li>
             </ul>
         </aside>
 
+        <!-- HTML 3. & 4. Feladat: Rólam és profilkép -->
         <section id="rolam">
             <h1>Rólam</h1>
             <img src="IMG-20260918_100454.jpg" alt="Profilképem" class="avatar">
 
             <h2>Bemutatkozás</h2>
-            <p>Informatikus hallgató vagyok, jelenleg az egyetemen tanulok. Célom a <span style="color: royalblue; font-weight: bold;">modern szoftverfejlesztés</span> és a programozási alapok elmélyítése, valamint hatékony és jól strukturált rendszerek készítése.</p>
+            <!-- CSS 13. Feladat: 1. inline CSS minta -->
+            <p>Informatikus hallgató vagyok, jelenleg az egyetemen tanulok. Célom a <span
+                    style="color: royalblue; font-weight: bold;">modern szoftverfejlesztés</span> elmélyítése és
+                letisztult alkalmazások készítése.</p>
+
+            <div class="info-kiemeles">
+                <p>Üdvözöllek az oldalamon! Nézz körül a projektjeim és a tesztmoduljaim között.</p>
+            </div>
 
             <h2>Érdeklődési körök</h2>
-            <p>A technológia mellett a szabadidőmet leginkább a <span style="background-color: #fef08a; padding: 2px 6px; border-radius: 4px;">gaming</span> és a <span style="background-color: #fed7aa; padding: 2px 6px; border-radius: 4px;">zenélés</span> köti le.</p>
+            <!-- CSS 13. Feladat: 2. inline CSS minta -->
+            <p>A technológia és kódolás mellett a szabadidőmet leginkább a <span
+                    style="background-color: #fef08a; padding: 2px 6px; border-radius: 4px;">gaming</span> és a <span
+                    style="background-color: #fed7aa; padding: 2px 6px; border-radius: 4px;">zenélés</span> köti le.</p>
         </section>
 
+        <!-- CSS 10. Feladat: Kétoszlopos Flexbox container -->
         <section>
             <h2>Fókuszterületek</h2>
             <div class="container">
                 <div>
-                    <h3>Mobil- és Frontend fejlesztés</h3>
-                    <p>Reszponzív felületek, natív és keresztplatformos alkalmazások készítése modern eszközökkel.</p>
+                    <h3>Frontend és Mobil</h3>
+                    <p>Reszponzív weboldalak és többplatformos mobilappok megvalósítása.</p>
                 </div>
                 <div>
-                    <h3>Rendszerprogramozás & Backend</h3>
-                    <p>Adatstruktúrák, algoritmusok, hatékony memóriakezelés és asztali szoftverarchitektúrák.</p>
+                    <h3>Backend és Rendszerek</h3>
+                    <p>Adatstruktúrák, algoritmusok és megbízható objektumorientált asztali architektúrák.</p>
                 </div>
             </div>
         </section>
 
+        <!-- HTML 5. & CSS 9. Feladat: Képességek és római számozású lista -->
         <section id="kepessegek">
             <h2>Képességek</h2>
             <ul>
@@ -91,12 +112,13 @@
 
             <h3 style="margin-top: 20px;">Tanulási prioritások</h3>
             <ol>
-                <li>Alacsony szintű architektúrák (C / C++)</li>
+                <li>Alacsony szintű algoritmusok (C / C++)</li>
                 <li>Objektumorientált tervezés (Java / C#)</li>
-                <li>Keresztplatformos mobilfejlesztés (Flutter)</li>
+                <li>Keresztplatformos mobilalkalmazások (Flutter)</li>
             </ol>
         </section>
 
+        <!-- HTML 6. Feladat: Projekttáblázat -->
         <section id="projektek">
             <h2>Projektek</h2>
             <table border="1">
@@ -111,17 +133,18 @@
                     <tr id="flutter-app">
                         <td>Mobil Zene és Albumkereső</td>
                         <td>Kereshető média- és katalógusalkalmazás API-integrációval.</td>
-                        <td><span class="tech-badge">Flutter</span> <span class="tech-badge">Dart</span></td>
+                        <td><span class="badge">Flutter</span> <span class="badge">Dart</span></td>
                     </tr>
                     <tr id="java-app">
                         <td>Random Playlist Generator Szoftver</td>
                         <td>Grafikus felülettel ellátott adatbázis- és objektumkezelő rendszer.</td>
-                        <td><span class="tech-badge">Java</span> <span class="tech-badge">Swing</span></td>
+                        <td><span class="badge">Java</span> <span class="badge">Swing</span></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
+        <!-- HTML 8. & CSS 11. Feladat: Galéria és CSS Grid -->
         <section id="galeria">
             <h2>Galéria a projektekhez</h2>
             <div class="grid">
@@ -129,19 +152,18 @@
                     <img src="https://picsum.photos/400/250?random=1" alt="Mobilapp felület képernyőképe">
                     <figcaption>1. ábra: Flutter alkalmazás felhasználói felülete.</figcaption>
                 </figure>
-
                 <figure>
                     <img src="https://picsum.photos/400/250?random=2" alt="Fejlesztői környezet és kód">
                     <figcaption>2. ábra: Asztali szoftver fejlesztési fázisa és adatmodellje.</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="https://picsum.photos/400/250?random=3" alt="Architektúra diagram">
-                    <figcaption>3. ábra: Rendszerterv és komponenskapcsolatok.</figcaption>
+                    <img src="https://picsum.photos/400/250?random=3" alt="Rendszerterv ábra">
+                    <figcaption>3. ábra: Rendszerarchitektúra diagram.</figcaption>
                 </figure>
             </div>
         </section>
 
+        <!-- HTML 9. Feladat: YouTube videó iframe beágyazás -->
         <section id="video">
             <h2>Projektbemutató videó</h2>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
@@ -151,6 +173,7 @@
             </iframe>
         </section>
 
+        <!-- HTML 10. Feladat: Kapcsolatfelvételi űrlap -->
         <section id="kapcsolat">
             <h2>Kapcsolatfelvétel</h2>
             <form action="#" method="post">
@@ -170,57 +193,64 @@
                         required></textarea>
                 </div>
                 <br>
-                <!-- 6., 7., 14. Feladat: Átmenettel és fókusszal ellátott gomb -->
                 <button type="submit">Küldés</button>
             </form>
         </section>
+
+        <!-- JS Gyakorlatok szekció: DOM tesztek a felületen -->
+        <section id="js-gyakorlatok">
+            <h2>JavaScript Feladatok Eredményei</h2>
+
+            <!-- JS 3. Feladat -->
+            <div class="js-box">
+                <h3>3. Feladat: Számláló</h3>
+                <button type="button" onclick="incrementCounter()">Növelés</button>
+                <p id="counter" style="font-weight: bold; font-size: 1.2rem;">0</p>
+            </div>
+
+            <!-- JS 4. Feladat -->
+            <div class="js-box">
+                <h3>4. Feladat: Név bekérése prompttal</h3>
+                <button type="button" onclick="askName()">Kérdezd meg a neved</button>
+                <p id="name"></p>
+            </div>
+
+            <!-- JS 5. Feladat -->
+            <div class="js-box">
+                <h3>5. Feladat: Visszaszámláló</h3>
+                <button type="button" onclick="startCountdown()">Indítsd el (10 mp)</button>
+                <p id="countdown" style="font-weight: bold; color: crimson;">10</p>
+            </div>
+
+            <!-- JS 6. Feladat -->
+            <div class="js-box">
+                <h3>6. Feladat: Gyümölcstömbből generált lista</h3>
+                <ul id="fruitList"></ul>
+            </div>
+
+            <!-- JS 8. Feladat -->
+            <div class="js-box">
+                <h3>8. Feladat: Objektum adatai listában</h3>
+                <ul id="personInfo"></ul>
+            </div>
+
+            <!-- JS 9. Feladat -->
+            <div class="js-box">
+                <h3>9. Feladat: Háttérszín váltása</h3>
+                <button type="button" onclick="changeBg()">Háttér váltás</button>
+            </div>
+        </section>
     </main>
 
+    <!-- HTML 12. Feladat: Lábléc és aktuális év -->
     <footer>
         <hr>
         <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
         <p>&copy; 2026 Minden jog fenntartva.</p>
     </footer>
 
+    <!-- A JS szkript bekötése -->
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-<section id="js-gyakorlatok" style="background: #ffffff; padding: 20px; border-radius: 8px; margin: 24px 0;">
-    <h2>JavaScript Gyakorlatok</h2>
-
-    <div style="margin-bottom: 16px;">
-        <h3>3. Számláló</h3>
-        <button type="button" onclick="incrementCounter()">Növelés</button>
-        <p id="counter" style="font-weight: bold; font-size: 1.2rem;">0</p>
-    </div>
-
-    <div style="margin-bottom: 16px;">
-        <h3>4. Név bekérése</h3>
-        <button type="button" onclick="askName()">Kérdezd meg a neved</button>
-        <p id="name"></p>
-    </div>
-
-    <div style="margin-bottom: 16px;">
-        <h3>5. Visszaszámláló (10 mp)</h3>
-        <button type="button" onclick="startCountdown()">Indítás</button>
-        <p id="countdown" style="font-weight: bold; color: crimson;">10</p>
-    </div>
-
-    <div style="margin-bottom: 16px;">
-        <h3>6. Tömb elemei (Gyümölcsök)</h3>
-        <ul id="fruitList"></ul>
-    </div>
-
-    <div style="margin-bottom: 16px;">
-        <h3>8. Személy adatai (Objektum)</h3>
-        <ul id="personInfo"></ul>
-    </div>
-
-    <div style="margin-bottom: 16px;">
-        <h3>9. Háttérszín váltása</h3>
-        <button type="button" onclick="changeBg()">Háttér váltás</button>
-    </div>
-</section>
-
-<script src="script.js"></script>
