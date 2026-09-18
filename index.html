@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólió - Főoldal</title>
 
-    <!-- 1. & 13. Feladat: A 2 különálló külső stíluslap csatolása -->
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="components.css">
 
-    <!-- 13. Feladat: 2 példa belső (internal) CSS-re a <style>-ban -->
     <style>
-        /* 1. belső stílus: kiemelt információs sáv */
         .info-kiemeles {
             background-color: #e8f0fe;
             border-left: 4px solid royalblue;
@@ -21,7 +18,6 @@
             border-radius: 4px;
         }
 
-        /* 2. belső stílus: tech címke / badge */
         .tech-badge {
             background-color: #e2e8f0;
             color: #1a202c;
@@ -60,19 +56,15 @@
 
         <section id="rolam">
             <h1>Rólam</h1>
-            <!-- 8. Feladat: Kerek profilkép a .avatar osztállyal -->
             <img src="IMG-20260918_100454.jpg" alt="Profilképem" class="avatar">
 
             <h2>Bemutatkozás</h2>
-            <!-- 13. Feladat: 1. inline CSS példa (szövegszín kiemelése) -->
             <p>Informatikus hallgató vagyok, jelenleg az egyetemen tanulok. Célom a <span style="color: royalblue; font-weight: bold;">modern szoftverfejlesztés</span> és a programozási alapok elmélyítése, valamint hatékony és jól strukturált rendszerek készítése.</p>
 
             <h2>Érdeklődési körök</h2>
-            <!-- 13. Feladat: 2. inline CSS példa (háttérszín és lekerekítés szavakra) -->
             <p>A technológia mellett a szabadidőmet leginkább a <span style="background-color: #fef08a; padding: 2px 6px; border-radius: 4px;">gaming</span> és a <span style="background-color: #fed7aa; padding: 2px 6px; border-radius: 4px;">zenélés</span> köti le.</p>
         </section>
 
-        <!-- 10. Feladat: Kétoszlopos Flexbox elrendezés (.container) -->
         <section>
             <h2>Fókuszterületek</h2>
             <div class="container">
@@ -97,7 +89,6 @@
                 <li>C#</li>
             </ul>
 
-            <!-- 9. Feladat: Rendezett lista római számokkal -->
             <h3 style="margin-top: 20px;">Tanulási prioritások</h3>
             <ol>
                 <li>Alacsony szintű architektúrák (C / C++)</li>
@@ -131,7 +122,6 @@
             </table>
         </section>
 
-        <!-- 11. Feladat: Reszponzív CSS Grid galéria (.grid) -->
         <section id="galeria">
             <h2>Galéria a projektekhez</h2>
             <div class="grid">
@@ -186,7 +176,6 @@
         </section>
     </main>
 
-    <!-- 12. Feladat: Lábléc elérhetőségekkel -->
     <footer>
         <hr>
         <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
@@ -197,49 +186,41 @@
 
 </html>
 
-<!-- JavaScript Gyakorlatok szekció -->
 <section id="js-gyakorlatok" style="background: #ffffff; padding: 20px; border-radius: 8px; margin: 24px 0;">
     <h2>JavaScript Gyakorlatok</h2>
 
-    <!-- 3. Feladat: Számláló -->
     <div style="margin-bottom: 16px;">
         <h3>3. Számláló</h3>
         <button type="button" onclick="incrementCounter()">Növelés</button>
         <p id="counter" style="font-weight: bold; font-size: 1.2rem;">0</p>
     </div>
 
-    <!-- 4. Feladat: Név bekérése -->
     <div style="margin-bottom: 16px;">
         <h3>4. Név bekérése</h3>
         <button type="button" onclick="askName()">Kérdezd meg a neved</button>
         <p id="name"></p>
     </div>
 
-    <!-- 5. Feladat: Visszaszámláló -->
     <div style="margin-bottom: 16px;">
         <h3>5. Visszaszámláló (10 mp)</h3>
         <button type="button" onclick="startCountdown()">Indítás</button>
         <p id="countdown" style="font-weight: bold; color: crimson;">10</p>
     </div>
 
-    <!-- 6. Feladat: Gyümölcslista -->
     <div style="margin-bottom: 16px;">
         <h3>6. Tömb elemei (Gyümölcsök)</h3>
         <ul id="fruitList"></ul>
     </div>
 
-    <!-- 8. Feladat: Objektum adatai -->
     <div style="margin-bottom: 16px;">
         <h3>8. Személy adatai (Objektum)</h3>
         <ul id="personInfo"></ul>
     </div>
 
-    <!-- 9. Feladat: Háttérszín váltás -->
     <div style="margin-bottom: 16px;">
         <h3>9. Háttérszín váltása</h3>
         <button type="button" onclick="changeBg()">Háttér váltás</button>
     </div>
 </section>
 
-<!-- A script csatolása a body legvégén -->
 <script src="script.js"></script>
