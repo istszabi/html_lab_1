@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólió</title>
 
-    <!-- 1. Feladat szerinti style.css -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- 13. Feladat szerinti base.css és components.css -->
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="components.css">
 
-    <!-- CSS 13. Feladat: 2 példa belső (internal) CSS-re -->
     <style>
         .info-kiemeles {
             background-color: #e8f0fe;
@@ -36,7 +33,6 @@
 
 <body>
 
-    <!-- HTML 2. Feladat: Fejléc, belső hivatkozások és aloldalak linkjei -->
     <header id="fooldal">
         <h1>Üdvözöllek a portfóliómban!</h1>
         <nav>
@@ -53,7 +49,6 @@
     </header>
 
     <main>
-        <!-- HTML 7. Feladat: Oldalsáv (aside) -->
         <aside>
             <h3>Gyors navigáció a projektekhez</h3>
             <ul>
@@ -62,13 +57,12 @@
             </ul>
         </aside>
 
-        <!-- HTML 3. & 4. Feladat: Rólam és profilkép -->
         <section id="rolam">
             <h1>Rólam</h1>
             <img src="IMG-20260918_100454.jpg" alt="Profilképem" class="avatar">
 
             <h2>Bemutatkozás</h2>
-            <!-- CSS 13. Feladat: 1. inline CSS minta -->
+
             <p>Informatikus hallgató vagyok, jelenleg az egyetemen tanulok. Célom a <span
                     style="color: royalblue; font-weight: bold;">modern szoftverfejlesztés</span> elmélyítése és
                 letisztult alkalmazások készítése.</p>
@@ -78,13 +72,11 @@
             </div>
 
             <h2>Érdeklődési körök</h2>
-            <!-- CSS 13. Feladat: 2. inline CSS minta -->
             <p>A technológia és kódolás mellett a szabadidőmet leginkább a <span
                     style="background-color: #fef08a; padding: 2px 6px; border-radius: 4px;">gaming</span> és a <span
                     style="background-color: #fed7aa; padding: 2px 6px; border-radius: 4px;">zenélés</span> köti le.</p>
         </section>
 
-        <!-- CSS 10. Feladat: Kétoszlopos Flexbox container -->
         <section>
             <h2>Fókuszterületek</h2>
             <div class="container">
@@ -99,7 +91,6 @@
             </div>
         </section>
 
-        <!-- HTML 5. & CSS 9. Feladat: Képességek és római számozású lista -->
         <section id="kepessegek">
             <h2>Képességek</h2>
             <ul>
@@ -118,7 +109,6 @@
             </ol>
         </section>
 
-        <!-- HTML 6. Feladat: Projekttáblázat -->
         <section id="projektek">
             <h2>Projektek</h2>
             <table border="1">
@@ -144,7 +134,6 @@
             </table>
         </section>
 
-        <!-- HTML 8. & CSS 11. Feladat: Galéria és CSS Grid -->
         <section id="galeria">
             <h2>Galéria a projektekhez</h2>
             <div class="grid">
@@ -163,7 +152,6 @@
             </div>
         </section>
 
-        <!-- HTML 9. Feladat: YouTube videó iframe beágyazás -->
         <section id="video">
             <h2>Projektbemutató videó</h2>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
@@ -173,7 +161,6 @@
             </iframe>
         </section>
 
-        <!-- HTML 10. Feladat: Kapcsolatfelvételi űrlap -->
         <section id="kapcsolat">
             <h2>Kapcsolatfelvétel</h2>
             <form action="#" method="post">
@@ -197,44 +184,38 @@
             </form>
         </section>
 
-        <!-- JS Gyakorlatok szekció: DOM tesztek a felületen -->
         <section id="js-gyakorlatok">
             <h2>JavaScript Feladatok Eredményei</h2>
 
-            <!-- JS 3. Feladat -->
             <div class="js-box">
                 <h3>3. Feladat: Számláló</h3>
                 <button type="button" onclick="incrementCounter()">Növelés</button>
                 <p id="counter" style="font-weight: bold; font-size: 1.2rem;">0</p>
             </div>
 
-            <!-- JS 4. Feladat -->
             <div class="js-box">
                 <h3>4. Feladat: Név bekérése prompttal</h3>
                 <button type="button" onclick="askName()">Kérdezd meg a neved</button>
                 <p id="name"></p>
             </div>
 
-            <!-- JS 5. Feladat -->
+
             <div class="js-box">
                 <h3>5. Feladat: Visszaszámláló</h3>
                 <button type="button" onclick="startCountdown()">Indítsd el (10 mp)</button>
                 <p id="countdown" style="font-weight: bold; color: crimson;">10</p>
             </div>
 
-            <!-- JS 6. Feladat -->
             <div class="js-box">
                 <h3>6. Feladat: Gyümölcstömbből generált lista</h3>
                 <ul id="fruitList"></ul>
             </div>
 
-            <!-- JS 8. Feladat -->
             <div class="js-box">
                 <h3>8. Feladat: Objektum adatai listában</h3>
                 <ul id="personInfo"></ul>
             </div>
 
-            <!-- JS 9. Feladat -->
             <div class="js-box">
                 <h3>9. Feladat: Háttérszín váltása</h3>
                 <button type="button" onclick="changeBg()">Háttér váltás</button>
@@ -242,14 +223,12 @@
         </section>
     </main>
 
-    <!-- HTML 12. Feladat: Lábléc és aktuális év -->
     <footer>
         <hr>
         <p><strong>Kapcsolat:</strong> hallgato@egyetem.hu</p>
         <p>&copy; 2026 Minden jog fenntartva.</p>
     </footer>
 
-    <!-- A JS szkript bekötése -->
     <script src="script.js"></script>
 </body>
 
